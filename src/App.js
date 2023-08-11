@@ -34,25 +34,19 @@ function App() {
       <SearchBar handleSearch={setSearch}/>
       
       <div className='result-container'>
-        <table>
-          <thead>
-            <tr>
-              <th>NºVoo</th>
-              <th>Logo</th>
-              <th>Missão</th>
-              <th>Data de Lançamento</th>
-              <th>Foguete</th>
-              <th>Resultado</th>
-              <th>Vídeo</th>
-            </tr>
-          </thead>
-          <tbody>
-            {dados.map((dataObj)=> {
+
+        <div className='table-header'>
+          <span className='div-th'>NºVoo</span>
+          <span className='div-th'>Logo</span>
+          <span className='div-th'>Missão</span>
+          <span className='div-th'>Data de Lançamento</span>
+          <span className='div-th'>Foguete</span>
+          <span className='div-th'>Resultado</span>
+          <span className='div-th'>Vídeo  </span>
+        </div>
+        {dados.map((dataObj)=> {
               return (<ResultadoVoo data = {dataObj}/>);
-            }) 
-            }
-          </tbody>
-        </table>
+            })}
 
         <div className='result-footer'>
           <span> 1</span>
@@ -62,6 +56,7 @@ function App() {
         </div>
 
       </div>
+
     </div>
   );
 }
@@ -76,5 +71,6 @@ components:
 -barra de pesquisa
 -lista Resultados
   -varias componentes ResultadoVoo
+  
 
 */

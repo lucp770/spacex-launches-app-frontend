@@ -137,3 +137,48 @@ tbody td{
   border: none;
   margin: 1rem 0;
 }
+
+
+.table-header{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+
+  color: black;
+  font-weight: bold;
+  font-size: .9rem;
+
+}
+
+.voo-result-label{
+  color: white;
+  padding: .3rem 0;
+  /* padding: 1px; */
+}
+
+.red{
+  background-color: red;
+}
+
+.green{
+  background-color: green;
+}
+
+.resultado-voo{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  align-items: center;
+
+  
+  background-color: var(--backgroundSecond);
+  margin: .1rem 0;
+  padding: .5rem .3rem;
+  box-sizing: border-box;
+
+  color: black;
+  font-weight: bold;
+  font-size: .9rem;
+
+  width: 99%;
+
+  border-radius: .2rem;
+}
