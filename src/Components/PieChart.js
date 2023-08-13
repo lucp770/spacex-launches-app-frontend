@@ -10,13 +10,15 @@ export default function pieChart({data}){
       };
 
     return (
-        <Chart
-            chartType="PieChart"
-            data={data}
-            options={options}
-            width={"450px"}
-            height={"300px"}
-        />
+        <div className='pie-chart'>
+            <Chart
+                chartType="PieChart"
+                data={data}
+                options={options}
+                width={"450px"}
+                height={"300px"}
+            />
+        </div>
     )
 
 }

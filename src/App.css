@@ -31,6 +31,20 @@ body{
   align-items: center;
   justify-content: center;
 }
+
+/* PLOT CONTAINER */
+
+.plot-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pie-chart{
+  margin-right: 3rem;
+}
+
+
 /* search component */
 
 .search-container{
