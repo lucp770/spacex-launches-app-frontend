@@ -18,7 +18,6 @@ export default function ResultadoVoo(props){
                 <div className={"voo-result-label " + ((resultado === 'Sucesso')? 'green': 'red')}>{resultado}</div>
                 <div><a href={video}><img src={ytLogo} style={{width: '2rem'}} /></a></div>
             </div>);
-
 }
 
 
